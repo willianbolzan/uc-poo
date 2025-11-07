@@ -1,0 +1,16 @@
+package edu.ifsc.vendas.data;
+
+import edu.ifsc.vendas.DataDeNascimento;
+
+import java.time.LocalDate;
+
+public class DataDeNascimentoBasica implements DataDeNascimento {
+    private LocalDate dataNascimento;
+    public DataDeNascimentoBasica(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+    @Override
+    public LocalDate dataDeNascimento() {
+        return this.dataNascimento;
+    }
+}
