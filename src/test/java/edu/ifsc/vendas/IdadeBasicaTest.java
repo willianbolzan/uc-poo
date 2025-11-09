@@ -28,14 +28,14 @@ public class IdadeBasicaTest {
 
     @Test
     public void testIdadeComDataAtual() {
-        LocalDate nascimento = LocalDate.of(2000, 1, 1);
+        LocalDate nascimento = LocalDate.of(1978, 3, 30);
         DataDeNascimento data = new DataDeNascimentoBasica(nascimento);
 
         IdadeBasica idade = new IdadeBasica(data);
         int resultado = idade.valor();
 
-        // Apenas mostra no console (teste não determinístico)
-        System.out.println("Idade atual de quem nasceu em 01/01/2000: " + resultado + " anos");
+
+        System.out.println("resultado:"+ resultado);
     }
 }
 

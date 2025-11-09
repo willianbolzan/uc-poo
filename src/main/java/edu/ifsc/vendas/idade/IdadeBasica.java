@@ -1,5 +1,7 @@
 package edu.ifsc.vendas.idade;
 
+
+
 import edu.ifsc.vendas.DataDeNascimento;
 import edu.ifsc.vendas.Idade;
 
@@ -14,8 +16,8 @@ public class IdadeBasica implements Idade {
     }
 
     @Override
-    public int valor() {
-        return Period.between(this.dataDeNascimemto.dataDeNascimento(), LocalDate.now()).getYears();
-    }
+    public int anos() {
+            return Period.between(this.dataDeNascimemto.data(), LocalDate.now()).getYears();
+        }
 
 }

@@ -10,7 +10,7 @@ public class DataDeNascimentoBasica implements DataDeNascimento {
         this.dataNascimento = dataNascimento;
     }
     @Override
-    public LocalDate dataDeNascimento() {
+    public LocalDate data() {
         return this.dataNascimento;
     }
 }
